@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
  body {
  	font-family: 'Lato', sans-serif;
@@ -44,7 +46,7 @@
 			text-transform: uppercase;
 			font-weight: 700;
 			letter-spacing: -1px;
-			font-size: 1.2rem;
+			font-size: 3.1rem;
 			text-decoration: none;
 			color:#397CAC;
 		}
@@ -77,12 +79,12 @@
 				color: #397CAC;
 				text-decoration: none;
 				font-weight: 100;
-				font-size: 1.25rem;
+				font-size: 2.75rem;
 			}
 		}
 		.date {
 			margin-top: .25rem;
-			font-size: 0.9rem;
+			font-size: 1.2rem;
 			color: #B2BAC2;
 		}
 	}
@@ -163,5 +165,31 @@
 			border-radius: .2em;
 			margin: 1em 0;
 		}
+	}
+}
+
+#posts {
+  .post_content {
+    padding: 0;
+    width: 100%;
+		min-height: 200px;
+		border: 1px solid #d1d1d1;
+		border-radius: .2em;
+		margin: 1em 0;
+  }
+  textarea {
+		width: 100%;
+		min-height: 200px;
+		border: 1px solid #d1d1d1;
+		border-radius: .2em;
+		margin: 1em 0;
+	}
+  input[type="submit"] {
+		background: #397CAC;
+		border: none;
+		color: white;
+		font-weight: 100;
+		padding: .5em 1em;
+		border-radius: .2em;
 	}
 }
